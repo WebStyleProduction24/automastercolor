@@ -86,7 +86,9 @@ body,
 #head .head_phone div {
 	padding: 0px 0px 0px 72px;
 	background: url(img/head_phone.png) no-repeat left center;
-	background-size: contain;
+}
+#head .head_phone div, .footer_phone, .phone {
+	background-size: contain !important;
 }
 
 .bottom_head {
@@ -158,12 +160,6 @@ body,
 	border: 1px solid #2BA8D6;
 	background: url(img/head_links_blue.png) repeat-x top center;
 	margin-left: 11px;
-}
-
-
-#body {
-	padding: 0px 0px 380px 0px;
-	margin-top: 0px;
 }
 
 .main_page_slider {
@@ -1163,7 +1159,7 @@ body,
 
 .contact_form_wrapper {
 	width: 100%;
-	padding: 40 0px 101px;
+	padding: 40px 0px 101px;
 }
 
 .contact_form_wrapper .contact_form_block {
@@ -1776,8 +1772,6 @@ body,
 
 #footer {
 	position: relative;
-	margin-top: -380px;
-	height: 415px;
 	clear: both;
 	background: #262D33;
 }
@@ -1822,9 +1816,15 @@ body,
 }
 
 #footer .content .footer_contact {
-	float: right;
-	width: 340px;
 	margin: 0px 0px 0px 0px;
+}
+
+.footer_contact a {
+	float: left;
+}
+
+.footer_contact a, #footer .content .footer_contact .links {
+	width: 50%;
 }
 
 #footer .content .footer_contact .footer_phone {
@@ -1837,8 +1837,8 @@ body,
 }
 
 #footer .content .footer_contact .links {
-	margin: 37px 0px 0px 0px;
 	text-align: right;
+	float: left;
 }
 
 #footer .content .footer_contact .links a {
