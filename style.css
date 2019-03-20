@@ -1141,7 +1141,6 @@ body,
 
 .conatct_map_wrapper #map {
 	width: 100%;
-	height: 585px;
 }
 
 .conatct_map_wrapper .line_top {
@@ -1164,7 +1163,7 @@ body,
 
 .contact_form_wrapper {
 	width: 100%;
-	padding: 99px 0px 101px;
+	padding: 40 0px 101px;
 }
 
 .contact_form_wrapper .contact_form_block {
