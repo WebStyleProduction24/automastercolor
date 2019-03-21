@@ -260,7 +260,7 @@ body,
 }
 
 #body h2 {
-	font: 35px 'Ubuntu';
+	font: 28px 'Ubuntu';
 	line-height: 40px;
 	font-weight: bold;
 	color: #353535;
@@ -1018,20 +1018,21 @@ body,
 
 .contact_page_wrapper {
 	width: 100%;
-	padding: 48px 0px 106px;
+	padding: 48px 0px 50px;
 }
 
 .contact_page_wrapper .left {
+	width: calc(60% - 2px);
 	float: left;
-	margin: 53px 0px 0px 0px;
-	width: 568px;
+	margin-top: 50px;
 	border-right: 2px solid #ECECEC;
 }
 
 .contact_page_wrapper .right {
 	float: right;
 	margin: 48px 0px 0px 0px;
-	width: 390px;
+	width: calc(40% - 20px);
+	padding-left: 20px;
 }
 
 .contact_page_wrapper .manager_list {
@@ -1157,21 +1158,19 @@ body,
 	background: url(img/contact_map_bottom_line.png) repeat-x center top;
 }
 
-.contact_form_wrapper {
-	width: 100%;
-	padding: 40px 0px 101px;
+.contact_form_block p {
+	margin-bottom: 0;
 }
 
 .contact_form_wrapper .contact_form_block {
-	width: 680px;
-	height: 528px;
 	background: url(img/contact_form_block_bg.png) no-repeat center top;
-	padding: 80px 80px 0px 80px;
+	background-size: contain;
+	padding: 45px 50px 0px;
 	margin: 0px auto;
 }
 
 .contact_form_wrapper .contact_form_block .form {
-	margin: 73px 0px 0px 0px;
+	margin-top: 36px;
 }
 
 .contact_form_wrapper .contact_form_block .form label {
@@ -1180,17 +1179,16 @@ body,
 	line-height: 20px;
 	color: #656565;
 	font-weight: 500;
-	margin: 0px 0px 15px 0px;
 }
 
 .contact_form_wrapper .contact_form_block .form .part {
-	width: 212px;
-	margin: 0px 22px 15px 0px;
+	width: 164px;
+	margin-right: 10px;
 	float: left;
 }
 
 .contact_form_wrapper .contact_form_block .form .part_last {
-	margin: 0px 0px 15px 0px;
+	margin-right: 0;
 }
 
 .contact_form_wrapper .contact_form_block .form label input {
@@ -1216,7 +1214,6 @@ body,
 	border: 1px solid #9CBAC2;
 	background: #DEE9ED;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) inset;
-	height: 111px;
 	font: 20px 'Ubuntu';
 	line-height: 30px;
 	font-weight: 500;
@@ -1227,8 +1224,8 @@ body,
 
 .contact_form_wrapper .sub {
 	display: block;
-	width: 250px;
-	height: 60px;
+	width: 200px;
+	height: 50px;
 	border-radius: 5px;
 	background: url(img/contact_sub_bg.png) repeat-x top center;
 	font: 24px 'OpenSans';
@@ -1237,7 +1234,7 @@ body,
 	border: 0px;
 	border-bottom: 3px solid #318D98;
 	text-shadow: 1px 1px 1px #289CB3;
-	margin: 28px auto 0px auto;
+	margin: 10px auto 0px;
 	cursor: pointer;
 	cursor: pointer;
 }
@@ -3344,6 +3341,7 @@ body,
 	 .privacy {
 	 	margin-top: 10px;
 	 	color: #5ABBF0;
+	 	font: 10px 'Ubuntu';
 	 }
 
 	 .privacy a {
