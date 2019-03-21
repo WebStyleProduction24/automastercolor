@@ -1182,13 +1182,14 @@ body,
 }
 
 .contact_form_wrapper .contact_form_block .form .part {
-	width: 164px;
+	width: calc(100%/3 - 10px);
 	margin-right: 10px;
 	float: left;
 }
 
 .contact_form_wrapper .contact_form_block .form .part_last {
 	margin-right: 0;
+	width: calc(100%/3);
 }
 
 .contact_form_wrapper .contact_form_block .form label input {
@@ -1897,6 +1898,25 @@ body,
 		display: block !important;
 	}
 
+	.contact_form_wrapper .sub {
+		width: 250px;
+		height: 60px;
+		margin-top: 25px;
+	}
+
+	.privacy {
+		margin-top: 25px !important;
+	}
+
+	.contact_form_wrapper .contact_form_block .form {
+		margin-top: 45px;
+	}
+	.contact_form_wrapper .contact_form_block .form label textarea {
+		height: 95px;
+	}
+	#footer .content .footer_contact .links .ozen {
+		margin-left: 0;
+	}
 }
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
@@ -2039,7 +2059,7 @@ body,
 		float: none;
 		border: 0px;
 		margin: 30px auto 0px auto;
-		width: 560px;
+		width: 100%;
 	}
 
 	.contact_page_wrapper .manager_list li {
@@ -2048,16 +2068,14 @@ body,
 
 	.contact_page_wrapper .right {
 		float: none;
-		margin: 40px auto 0px auto;
+		margin: 40px 25px 0px;
+		width: 100%;
+		padding: 0;
 	}
 
 	.contact_form_wrapper .contact_form_block {
 		width: auto;
-		padding: 80px 20px 0px 20px;
-	}
-
-	.contact_form_wrapper .contact_form_block .form .part {
-		margin-right: 36px;
+		padding: 75px 65px 0px;
 	}
 
 	.contact_form_wrapper .contact_form_block .form .part_last {
@@ -2671,9 +2689,14 @@ body,
 	}
 
 	#footer .content .footer_contact .footer_phone {
-		width: 220px;
+		width: calc(100% - 82px);
 		float: none;
 		font-size: 25px;
+		margin-bottom: 20px;
+	}
+
+	.footer_contact a, #footer .content .footer_contact .links {
+		width: 100%;
 	}
 
 	#footer .content .footer_contact .links {
@@ -2685,6 +2708,9 @@ body,
 		border: 0px;
 		margin: 30px auto 0px auto;
 		width: auto;
+	}
+	.contact_page_wrapper .right {
+		padding-left: 0;
 	}
 
 	.contact_page_wrapper .manager_list li {
