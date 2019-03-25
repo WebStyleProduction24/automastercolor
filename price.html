@@ -73,25 +73,6 @@
 
 	<!-- <script src="form-validator/jquery.form-validator.min.js"></script> -->
 
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=a3537b2c-0943-46b8-8c4e-49f33a7a5393&lang=ru_RU" type="text/javascript">
-    </script>
-    <script type="text/javascript">
-    ymaps.ready(init);
-    function init(){ 
-        // Создание карты.    
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [51.640860, 39.115997],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 16.5
-        });
-    }
-</script>
-
 	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript">
 		ymaps.ready(init);
@@ -271,11 +252,11 @@
 			<div class="content">
 				<div class="main_menu_block">
 					<div class="menu-glavnoe-menyu-container">
-						<ul class="sfmenu">
-							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item"><a href="/">Главная</a></li>
-							<li class="menu-item menu-item-type-custom menu-item-object-"><a href="/works.html">Фото работ</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/pricelist.html">Цены</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page"><a title="Мобильныйофисстрахования.рф" target="_blank" href="https://xn--80aabf2aaddrhofdfc4aqat0b1a6jva3g.xn--p1ai/">ОСАГО</a></li>
+						<ul id="menu-glavnoe-menyu" class="sfmenu">
+							<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-32"><a href="/">Главная</a></li>
+							<li id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-181"><a href="/works.html">Фото работ</a></li>
+							<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="/pricelist.html">Цены</a></li>
+							<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a title="Мобильныйофисстрахования.рф" target="_blank" href="https://xn--80aabf2aaddrhofdfc4aqat0b1a6jva3g.xn--p1ai/">ОСАГО</a></li>
 						</ul>
 					</div>
 				</div>
@@ -387,7 +368,7 @@
 					<div class="contact_form_block">
 						<h2>Форма<br> обратной связи</h2>
 						<div class="form">
-							<div class="wpcf7" lang="ru-RU" dir="ltr">
+							<div class="wpcf7" id="wpcf7-f74-o1" lang="ru-RU" dir="ltr">
 								<div class="screen-reader-response"></div>
 								<form name="" action="/contact/#wpcf7-f74-o1" method="post" class="wpcf7-form has-validation-callback" novalidate="novalidate">
 									<div style="display: none;">
@@ -458,7 +439,11 @@
 
 
 		<div class="conatct_map_wrapper">
-			<div id="map" style="width:100%; height: 400px;">
+			<div id="map" style="">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6da465d7572c8dccdc552fe1f241be0e166a5712b8009c6270f37d3c3de775f2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>				<div class="line_top">
+				</div>
+				<div class="line_bottom">
+				</div>
 			</div>
 		</div>
 
