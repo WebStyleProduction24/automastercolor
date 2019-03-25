@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/*Кастомный css от Web Style Production 24 (https://wsp24.ru/)*/
+
+@media (max-width: 991px) {
+	.d-mobile-none{
+		display: none;
+	}
+}
