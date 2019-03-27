@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Автомастерколор - восстановительные работы</title>
+	<title>AutoMasterColor - восстановительные работы в Воронеже</title>
 
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="fnt/font.css">
@@ -74,47 +74,51 @@
 	<!-- <script src="form-validator/jquery.form-validator.min.js"></script> -->
 
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=a3537b2c-0943-46b8-8c4e-49f33a7a5393&lang=ru_RU" type="text/javascript">
-    </script>
-    <script type="text/javascript">
-    ymaps.ready(init);
-    function init(){ 
-        // Создание карты.    
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [51.640860, 39.115997],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 16.5
-        });
-    }
-</script>
-
-	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	</script>
 	<script type="text/javascript">
 		ymaps.ready(init);
-		var myMap, 
-		myPlacemark;
-
-		function init(){ 
-			myMap = new ymaps.Map("map", {
-				center: [55.706586, 37.694501],
-				zoom:14.5
-			}); 
-
-			myPlacemark = new ymaps.Placemark([55.706586, 37.694501],{},{
-				iconLayout: 'default#image',
-				iconImageHref: 'img/map_ico.png',
-				iconImageSize: [119, 64],
-				iconImageOffset: [-48, -65]
+		function init(){   
+			var myMap = new ymaps.Map("map", {
+				center: [51.640860, 39.115997],
+				zoom: 14,
+				controls: []
 			});
-			
-			myMap.behaviors.disable('scrollZoom');
-			myMap.geoObjects.add(myPlacemark);
+
+			var myGeoObject = new ymaps.GeoObject({
+				geometry: {
+					type: "Point",
+					coordinates: [51.640860, 39.115997]
+				},
+				properties: {
+					hintContent: "AutoMasterColor",
+					balloonContentHeader: "AutoMasterColor",
+					balloonContentBody: "Восстановительные работы в Воронеже<br>г. Воронеж, проспект Патриотов д.49Б<br>с 9-00 до 20-00",
+				}
+			}, {
+				preset: "islands#redRepairShopIcon"
+			});
+
+			var myButton = new ymaps.control.Button({
+				data: {
+					content: "В Яндекс.Навигатор"
+				},
+				options: {
+					maxWidth: [250]
+				}
+			});
+
+			myButton.events.add('click', function () {
+				document.location.href = "yandexnavi://show_point_on_map?lat=51.640860&lon=39.115997&zoom=16&no-balloon=0&desc=AutoMasterColor";
+			});
+
+			myMap.geoObjects.add(myGeoObject);
+			myMap.controls.add(myButton);
+
+			myMap.controls.add('zoomControl');
+			myMap.controls.add('rulerControl');
 		}
-	</script> -->
+	</script>
+
 
 	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
 
@@ -271,11 +275,11 @@
 			<div class="content">
 				<div class="main_menu_block">
 					<div class="menu-glavnoe-menyu-container">
-						<ul class="sfmenu">
-							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item"><a href="/">Главная</a></li>
-							<li class="menu-item menu-item-type-custom menu-item-object-"><a href="/works.html">Фото работ</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/pricelist.html">Цены</a></li>
-							<li class="menu-item menu-item-type-post_type menu-item-object-page"><a title="Мобильныйофисстрахования.рф" target="_blank" href="https://xn--80aabf2aaddrhofdfc4aqat0b1a6jva3g.xn--p1ai/">ОСАГО</a></li>
+						<ul id="menu-glavnoe-menyu" class="sfmenu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-32"><a href="/">Главная</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-181"><a href="/works.html">Фото работ</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="/price.html">Цены</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a title="Мобильныйофисстрахования.рф" target="_blank" href="https://xn--80aabf2aaddrhofdfc4aqat0b1a6jva3g.xn--p1ai/">ОСАГО</a></li>
 						</ul>
 					</div>
 				</div>
@@ -444,7 +448,7 @@
 
 
 					<div class="adr">
-						<div>Наш адрес: г. Воронеж, проспект Патриотов д.49Б</div>
+						<div>Наш адрес: <a style="color:#333; text-decoration: underline;" href="yandexnavi://show_point_on_map?lat=51.640860&lon=39.115997&zoom=16&no-balloon=0&desc=AutoMasterColor">г. Воронеж, проспект Патриотов д.49Б</a></div>
 						<p>Всего 500 метров от Castorama.</p>
 						<p>Мы работаем ежедневно без выходных и праздничных дней с 9-00 до 20-00</p>
 					</div>
