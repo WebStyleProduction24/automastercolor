@@ -160,6 +160,25 @@
 		<script src="js/html5.js" type="text/javascript"></script>
 	<![endif]-->
 
+
+
+	<script>
+		
+
+			$(document).ready(function(){
+				function tab() {
+					// var id = $(this).attr('href');
+					// console.log(id);
+
+
+					alert('test')
+					// return false;
+				} 
+			});
+
+		
+	</script>
+
 	<style type="text/css" data-ymaps="css-modules">
 		.ymaps-2-1-73-pie-chart,.ymaps-2-1-73-pie-chart-caption{position:absolute;display:block;font-family:Arial,sans;font-size:13px}.ymaps-2-1-73-pie-chart{text-align:center;background-size:100% 100%;overflow:visible;z-index:1}.ymaps-2-1-73-pie-chart-caption{-webkit-transform:translate(-50%,0);transform:translate(-50%,0);background-color:rgba(255,255,255,.8);border-radius:3px;padding:0 8px;line-height:24px;max-width:200px;box-sizing:border-box;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;z-index:-1}.ymaps-2-1-73-pie-chart-content,.ymaps-2-1-73-pie-chart-icon{position:absolute;top:0;left:0;height:100%;width:100%}.ymaps-2-1-73-pie-chart-icon{z-index:0}.ymaps-2-1-73-pie-chart-content{z-index:1}
 		/**/
@@ -277,7 +296,18 @@
 			<div class="content">
 				<h1>Прайс-лист</h1>
 				<div>
-					
+					<p><strong><i>Тестируем вкладки</i></strong></p>
+					<a href="#tab1" onclick="tab()">вкладка1</a>
+					<a href="#tab2" onclick="tab()">вкладка2</a>
+					<a href="#tab3" onclick="tab()">вкладка3</a>
+					<a href="#tab4" onclick="tab()">вкладка4</a>
+					<a href="#tab5" onclick="tab()">вкладка5</a>
+
+					<div id="tab1">test1</div>
+					<div id="tab2">test2</div>
+					<div id="tab3">test3</div>
+					<div id="tab4">test4</div>
+					<div id="tab5">test5</div>
 				</div>
 				<div class="clear">
 				</div>

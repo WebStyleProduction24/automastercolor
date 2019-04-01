@@ -6,6 +6,22 @@
 	min-height: 50vh;
 }
 
+/*Переключаемые вкладки на price.html*/
+
+div[id^="tab"]:not([id="tab1"]) {
+	display: none;
+}
+/*
+#tab2:target, #tab3:target,
+#tab4:target, #tab5:target {
+	display: block;
+}
+#tab2:target ~ #tab1, #tab3:target ~ #tab1,
+#tab4:target ~ #tab1, #tab5:target ~ #tab1 {
+	display: none;
+}*/
+/*Конец Переключаемые вкладки на price.html*/
+
 @media (max-width: 991px) {
 	.d-mobile-none{
 		display: none;
