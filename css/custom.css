@@ -5,23 +5,35 @@
 #body {
 	min-height: 50vh;
 }
-
-/*Переключаемые вкладки на price.html*/
-
-div[id^="tab"]:not([id="tab1"]) {
-	display: none;
+table {
+	width: 100%;
+	text-align: center;
 }
-/*
-#tab2:target, #tab3:target,
-#tab4:target, #tab5:target {
-	display: block;
+td {
+	padding: 10px;
 }
-#tab2:target ~ #tab1, #tab3:target ~ #tab1,
-#tab4:target ~ #tab1, #tab5:target ~ #tab1 {
-	display: none;
-}*/
-/*Конец Переключаемые вкладки на price.html*/
-
+td:first-child {
+	text-align: left;
+}
+thead {
+	font-weight: bold;
+	background-color: #2BA8D6 ;
+	text-transform: uppercase;
+}
+tbody tr {
+	background-color: rgba(0, 0, 0, .25);
+}
+tbody tr:nth-child(2n-1) {
+	background-color: rgba(0, 0, 0, .125);
+}
+.pdf {
+	color:#333;
+	font-size: 1rem;
+}
+.pdf i {
+	color: red;
+	margin-right: 10px;
+}
 @media (max-width: 991px) {
 	.d-mobile-none{
 		display: none;
