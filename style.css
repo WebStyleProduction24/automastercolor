@@ -1934,12 +1934,12 @@ body,
 	.bottom_head .main_menu_block {}
 
 	.bottom_head .main_menu_block ul li {
-		margin: 0px 0px 0px 40px;
+		margin: 0px 0px 0px 30px;
 	}
 
 	.bottom_head .links {
 		float: left;
-		margin: 10px 0px 0px 0px;
+		margin: 0px 0px 0px 20px;
 	}
 
 	.main_page_slider .bx-wrapper .bx-controls-direction .bx-next {
