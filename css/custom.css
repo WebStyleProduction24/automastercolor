@@ -5,6 +5,9 @@
 #body {
 	min-height: 50vh;
 }
+#body.no-index {
+	margin-top: 60px;
+}
 table {
 	width: 100%;
 	text-align: center;
@@ -34,8 +37,34 @@ tbody tr:nth-child(2n-1) {
 	color: red;
 	margin-right: 10px;
 }
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+	.content {
+		width: 985px;
+	}
+	.our_service_wrapper .our_service_list li {	
+		width: calc(100%/3 - 29px;);
+	}
+}
+
 @media (max-width: 991px) {
 	.d-mobile-none{
 		display: none;
+	}
+	#body.no-index {
+		margin-top: 0;
+	}
+	#body.no-index .our_service_wrapper{
+		padding-top: 20px;
+	}
+	#body h1 {
+		font-size: 20px;
+		line-height: 20px;
+	}
+}
+
+@media (max-width: 575px) {
+	#back-to-top.visible {
+		right: 5px;
 	}
 }
