@@ -611,34 +611,35 @@
 			<p>Наш адрес: г. Воронеж, проспект Патриотов д.49Б</p>
 		</li>
 	</div>
-	<div id="popup_zvon" class="dlg-modal popup_wrapper">
-		<li class="popup_zvon">
-			<a class="popup_close"  data-close=""></a>
-			<div class="title">Обратный звонок</div>
-			<div class="form">
-				<div class="wpcf7" id="wpcf7-f7489-o2" lang="ru-RU" dir="ltr">
-					<div class="screen-reader-response"></div>
-					<form name="" action="/#wpcf7-f7489-o2" method="post" class="wpcf7-form has-validation-callback" novalidate="novalidate">
-						<div style="display: none;">
-							<input type="hidden" name="_wpcf7" value="7489">
-							<input type="hidden" name="_wpcf7_version" value="3.9.1">
-							<input type="hidden" name="_wpcf7_locale" value="ru_RU">
-							<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f7489-o2">
-							<input type="hidden" name="_wpnonce" value="3f51f19b1a">
-						</div>
-						<p><label class="half first"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="Имя" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label>
-						</p>
-						<p><label class="half"><span class="wpcf7-form-control-wrap your-tel"><input type="text" name="your-tel" value="Телефон" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></p>
-						<div class="clear"></div>
-						<p style="margin-bottom: 0;">
-							<label>
-								<span class="wpcf7-form-control-wrap your-message">
-									<textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Комментарий"></textarea>
-								</span>
-							</label>
-							<input type="submit" value="заказать звонок" class="wpcf7-form-control wpcf7-submit sub"  style="margin-bottom: 0;">
-							<img class="ajax-loader" src="https://pitstopcolor.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Отправка..." style="visibility: hidden;">
-						</p>
+<div id="popup_zvon" class="dlg-modal popup_wrapper">
+	<li class="popup_zvon">
+		<a class="popup_close"  data-close=""></a>
+		<div class="title">Обратный звонок</div>
+		<div class="form">
+			<div class="wpcf7" id="wpcf7-f7489-o2" lang="ru-RU" dir="ltr">
+				<div class="screen-reader-response"></div>
+				<form id="callback" action="send.php" method="post" class="wpcf7-form has-validation-callback" novalidate="novalidate">
+					<div style="display: none;">
+						<input type="hidden" name="formData" value="Обратный звонок с сайта">
+						<input type="hidden" name="_wpcf7" value="7489">
+						<input type="hidden" name="_wpcf7_version" value="3.9.1">
+						<input type="hidden" name="_wpcf7_locale" value="ru_RU">
+						<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f7489-o2">
+						<input type="hidden" name="_wpnonce" value="3f51f19b1a">
+					</div>
+					<p><label class="half first"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="Имя" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label>
+					</p>
+					<p><label class="half"><span class="wpcf7-form-control-wrap your-tel"><input type="text" name="your-tel" value="Телефон" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></p>
+					<div class="clear"></div>
+					<p style="margin-bottom: 0;">
+						<label>
+							<span class="wpcf7-form-control-wrap your-message">
+								<textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Комментарий"></textarea>
+							</span>
+						</label>
+						<input type="submit" value="заказать звонок" class="wpcf7-form-control wpcf7-submit sub"  style="margin-bottom: 0;">
+						<img class="ajax-loader" src="https://pitstopcolor.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Отправка..." style="visibility: hidden;">
+					</p>
 						<!-- 
 						<div class="sub_text">
 							<div class="privacy">Нажимая кнопку «Заказать звонок», вы подтверждаете, что ознакомились с <a href="/wp-content/uploads/2017/06/privacy.pdf" target="_blank">Условиями обработки персональных данных</a> и принимаете их.</div>
