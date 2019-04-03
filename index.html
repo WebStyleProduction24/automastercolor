@@ -8,7 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="fnt/font.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<link rel="stylesheet" type="text/css"  href="css/slider.style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"  href="css/slider.style.css">
+	<link href="popup/popup.style.css" rel="stylesheet">
 
 
 	<script type="text/javascript">
@@ -36,44 +37,15 @@
 
 	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 
-	<!-- <link rel="stylesheet" type="text/css" href="bx/jquery.bxslider.css">
-		<script async="" type="text/javascript" src="bx/jquery.bxslider.min.js"></script> -->
 
-		<script async="" type="text/javascript" src="js/my.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
-		<link rel="stylesheet" type="text/css" href="css/progress-style.css">
-		<script async="" type="text/javascript" src="js/jquery.formstyler.min.js"></script>
-		<script src="js/jquery.maskedinput.min.js"></script>
+	<script async="" type="text/javascript" src="js/my.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" type="text/css" href="css/progress-style.css">
+	<script async="" type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 
-	<!-- <script async="" type="text/javascript">
-		jQuery(document).ready(function(e) {
-			jQuery(".main_page_slider .bx_slider").bxSlider({
-				mode:'fade',
-				speed:300,
-				infiniteLoop:true,
-				pager:true,
-				controls:true,
-				nextText:'',
-				prevText:'',
-				auto:true,
-				pause:5000		
-			});
-			jQuery(".our_works_slider .bx_slider").bxSlider({
-				mode:'fade',
-				speed:300,
-				infiniteLoop:true,
-				pager:false,
-				controls:true,
-				nextText:'',
-				prevText:'',
-				auto:true,
-				pause:5000		
-			});
-			jQuery('select').styler();
-		});
-	</script> -->
 
-	<!-- <script src="form-validator/jquery.form-validator.min.js"></script> -->
+	<script src="form-validator/jquery.form-validator.min.js"></script>
 
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=a3537b2c-0943-46b8-8c4e-49f33a7a5393&lang=ru_RU" type="text/javascript">
 	</script>
@@ -121,65 +93,6 @@
 		}
 	</script>
 
-
-	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
-
-	<!-- <script src="css/slick.min.js"></script> -->
-
-<!-- 	<script>
-		jQuery(document).ready(function(e) {
-			/*NEW8*/if(jQuery('.slick_slider .swiper-slide').length>6){
-				jQuery('.slick_slider').slick({
-					slidesToShow: 6,
-					slidesToScroll: 1,
-					autoplay:true,
-					autoplaySpeed:3000,
-					speed:100,
-					arrows:true,
-					prevArrow:'<a class="slick-btn slick-prev"></a>',
-					nextArrow:'<a class="slick-btn slick-next"></a>',
-					dots:false,
-					/*fade:true,*/
-					infinite:false,
-					vertical:true,
-					/*verticalSwiping:true*/
-				});
-				jQuery(".aero_work_block").hover(function(e) {
-					jQuery('.slick_slider').slick('slickPause');
-				},function(){
-					jQuery('.slick_slider').slick('slickPlay');
-				});
-				jQuery('.slick_slider').on('afterChange', function(event, slick, currentSlide){
-					jQuery(".aero_work_block .photo_list>.vis").removeClass("vis");
-					jQuery(".aero_work_block .photo_list>li").eq(currentSlide).addClass("vis");
-				});
-			}else{
-				jQuery('.slick_slider .swiper-slide').eq(0).addClass("slick-current");
-			}
-
-			/*NEW8*/jQuery(".slick_slider .swiper-slide a").click(function(){
-				if(jQuery(".work_slider_block .slick-initialized").length>0){
-					var i = jQuery(this).parent(".swiper-slide").index();
-					jQuery('.slick_slider').slick('slickGoTo',i, false);
-				}else{
-					jQuery('.slick_slider .slick-current').removeClass("slick-current");
-					jQuery(this).parent(".swiper-slide").addClass("slick-current");
-					var i = jQuery(this).parent(".swiper-slide").index();
-					jQuery(".aero_work_block .photo_list>.vis").removeClass("vis");
-					jQuery(".aero_work_block .photo_list>li").eq(i).addClass("vis");
-				}
-				return false;
-			});
-
-			jQuery(".s_img_list a").mouseover(function(){
-				var ind = jQuery(this).parent("li").index();
-				var l_img = jQuery(this).parents(".s_img").parent("li").find(".l_img_list");
-				l_img.find(".act").removeClass("act");
-				l_img.children("li").eq(ind).addClass("act");
-			});
-
-		});
-	</script> -->
 
 	<!--[if lt IE 9]>
 		<script src="js/html5.js" type="text/javascript"></script>
@@ -288,8 +201,8 @@
 						</div>
 					</div>
 					<div class="links">
-						<a href="popup_photov2" class="foto popup_open" rel="nofollow">оценка по фото</a>
-						<a href="popup_zvon" class="ozen popup_open" rel="nofollow">Обратный звонок</a>
+						<a href="#popup_photov" class="foto popup_open" rel="nofollow" data-modal="popup_photov">оценка по фото</a>
+						<a href="#popup_zvon" class="ozen popup_open" rel="nofollow" data-modal="popup_zvon">Обратный звонок</a>
 					</div>
 					<div class="clear">
 					</div>
@@ -442,7 +355,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="privacy">Нажимая кнопку «Отправить», вы подтверждаете, что ознакомились с <a href="/wp-content/uploads/2017/06/privacy.pdf" target="_blank">Условиями обработки персональных данных</a> и принимаете их.</div>
+						<!-- <div class="privacy">Нажимая кнопку «Отправить», вы подтверждаете, что ознакомились с <a href="/wp-content/uploads/2017/06/privacy.pdf" target="_blank">Условиями обработки персональных данных</a> и принимаете их.</div> -->
 						<div class="wpcf7-response-output wpcf7-display-none"></div>
 					</div>
 					<div class="clear">
@@ -458,142 +371,224 @@
 						<p>Всего 500 метров от Castorama.</p>
 						<p>Мы работаем ежедневно без выходных и праздничных дней с 9-00 до 20-00</p>
 					</div>
-					<a href="tel:+79507777187"><div class="phone">+7 (950) 7777-187</div></a>
-				</div>
-				<div class="clear">
-				</div>
-			</div>
-		</div>
-
-		<div class="gallery_wrapper">
-			<a name="gallery"></a>
-			<div class="content">
-				<h1>Фото работ</h1>
-
-				<div id="gallery" class="gallery gallery1">
-					<div class="slider">
-						<div class="stage">
-							<div>
-								<img src="img/gallery/UZwBJFMzwXs.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/QmzO_TIMNYc.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/UuBIJikgPNk.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/bMplFb7ATFc.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/RttvH8UZiE0.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/LoWbvyUCxYw.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/solaris-2.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/neksia.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/niva.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/matiz.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/2115.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/focus.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/almera_floor.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/vesta.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/megan.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/kalina.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/polo.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/audi.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/logan.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/almera.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/akcent.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/solaris.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/mersedes.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/bmv.jpg" alt="">
-							</div>
-							<div>
-								<img src="img/gallery/granta.jpg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="control">
-						<div class="nav-ctrl">
-							<span class="prev" data-shift="prev">Назад</span>
-							<span class="next" data-shift="next">Вперед</span>
-						</div>
-						<ul class="dots-ctrl"></ul>
+					<a href="tel:+79507777187"><div class="phone">+7 (950) 7777-187</div></a>					
+					<div class="kontakts-message">
+						<a href="https://api.whatsapp.com/send?phone=79507777187" rel="nofollow" target="_blank">
+							<img src="img/whatsappv2.png">
+						</a>
+						<a href="viber://chat?number=79507777187" rel="nofollow" target="_blank">
+							<img src="img/viberv2.png">
+						</a>
+						<a href="https://vk.com/malyrvrn" rel="nofollow" target="_blank">
+							<img src="img/vkv2.png">
+						</a>				
+						<a href="mailto:xaychencko@yandex.ru" rel="nofollow" target="_blank">
+							<img src="img/email.png">
+						</a>
 					</div>
 				</div>
-
 			</div>
 
-		</div>
-
-		<div class="conatct_map_wrapper">
-			<div id="map" style="width:100%; height: 400px;">
-			</div>
-		</div>
-
-	</div>
-
-
-	<div id="footer">
-		<div class="content">
-			<div class="footer_contact">
-				<a href="tel:+79507777187"><div class="footer_phone">+7 (950) 7777-187</div></a>
-				<div class="links">
-					<a href="popup_photov2" class="foto popup_open" rel="nofollow">оценка по фото</a>
-					<a href="popup_zvon" class="ozen popup_open" rel="nofollow">Обратный звонок</a>
-				</div>
-			</div>
 			<div class="clear">
 			</div>
-			<div class="copy">© 2019 «AutoMasterColor» ИНН: 366408065820; ОГРН: 304366424300101<br>
-				<span style="font-size:12px">
-					Любая информация, в том числе об услугах, сроках, ценах, гарантийных обязательствах, размещенная на сайте, не является публичной офертой. Все права защищены.<br>
-					<a href="https://wsp24.ru/" rel="nofollow" target="_blank" style="color: #5ABBF0">Web Style Production 24</a> - разработка сайта.<br>
-					<a href="/wp-content/uploads/2017/06/privacy.pdf" style="color: #5ABBF0" target="_blank">Политика конфиденциальности</a><br>
-				</span>
-			</div>
 		</div>
 	</div>
 
+	<div class="gallery_wrapper">
+		<a name="gallery"></a>
+		<div class="content">
+			<h1>Фото работ</h1>
+
+			<div id="gallery" class="gallery gallery1">
+				<div class="slider">
+					<div class="stage">
+						<div>
+							<img src="img/gallery/UZwBJFMzwXs.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/QmzO_TIMNYc.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/UuBIJikgPNk.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/bMplFb7ATFc.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/RttvH8UZiE0.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/LoWbvyUCxYw.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/solaris-2.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/neksia.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/niva.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/matiz.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/2115.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/focus.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/almera_floor.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/vesta.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/megan.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/kalina.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/polo.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/audi.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/logan.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/almera.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/akcent.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/solaris.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/mersedes.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/bmv.jpg" alt="">
+						</div>
+						<div>
+							<img src="img/gallery/granta.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="control">
+					<div class="nav-ctrl">
+						<span class="prev" data-shift="prev">Назад</span>
+						<span class="next" data-shift="next">Вперед</span>
+					</div>
+					<ul class="dots-ctrl"></ul>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="conatct_map_wrapper">
+		<div id="map" style="width:100%; height: 400px;">
+		</div>
+	</div>
+
+</div>
 
 
+<div id="footer">
+	<div class="content">
+		<div class="footer_contact">
+			<a href="tel:+79507777187"><div class="footer_phone">+7 (950) 7777-187</div></a>
+			<div class="links">
+				<a href="#popup_photov" class="foto popup_open" rel="nofollow" data-modal="popup_photov">оценка по фото</a>
+				<a href="#popup_zvon" class="ozen popup_open" rel="nofollow" data-modal="popup_zvon">Обратный звонок</a>
+			</div>
+		</div>
+		<div class="clear">
+		</div>
+		<div class="copy">© 2019 «AutoMasterColor» ИНН: 366408065820; ОГРН: 304366424300101<br>
+			<span style="font-size:12px">
+				Любая информация, в том числе об услугах, сроках, ценах, гарантийных обязательствах, размещенная на сайте, не является публичной офертой. Все права защищены.<br>
+				<a href="https://wsp24.ru/" rel="nofollow" target="_blank" style="color: #5ABBF0">Web Style Production 24</a> - разработка сайта.<br>
+				<!-- <a href="/wp-content/uploads/2017/06/privacy.pdf" style="color: #5ABBF0" target="_blank">Политика конфиденциальности</a><br> -->
+			</span>
+		</div>
+	</div>
+</div>
+
+
+<div class="overlay" data-close=""></div>
+<div id="popup_photov" class="dlg-modal popup_wrapper">
+
+
+
+	<li class="popup_photov2">
+		<a class="popup_close" data-close=""></a>
+		<div class="title">оценка по фотографии</div>
+		<p>(пришлите фото любым удобным для Вас способом)</p>
+		<div class="form ocenv2">
+			<div>
+				<a href="https://api.whatsapp.com/send?phone=79507777187" rel="nofollow" target="_blank">
+					<img src="img/whatsappv2.png">
+				</a>
+				<a href="viber://chat?number=79507777187" rel="nofollow" target="_blank">
+					<img src="img/viberv2.png">
+				</a>					
+				<a href="https://vk.com/malyrvrn" rel="nofollow" target="_blank">
+					<img src="img/vkv2.png">
+				</a>
+			</div>
+		</div>
+		<p class="photov2-p">Также, мы принимаем запросы на e-mail: <a href="mailto:xaychencko@yandex.ru">xaychencko@yandex.ru</a></p>
+		<p>Наш адрес: г. Воронеж, проспект Патриотов д.49Б</p>
+	</li>
+</div>
+<div id="popup_zvon" class="dlg-modal popup_wrapper">
+	<li class="popup_zvon">
+		<a class="popup_close"  data-close=""></a>
+		<div class="title">Обратный звонок</div>
+		<div class="form">
+			<div class="wpcf7" id="wpcf7-f7489-o2" lang="ru-RU" dir="ltr">
+				<div class="screen-reader-response"></div>
+				<form name="" action="/#wpcf7-f7489-o2" method="post" class="wpcf7-form has-validation-callback" novalidate="novalidate">
+					<div style="display: none;">
+						<input type="hidden" name="_wpcf7" value="7489">
+						<input type="hidden" name="_wpcf7_version" value="3.9.1">
+						<input type="hidden" name="_wpcf7_locale" value="ru_RU">
+						<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f7489-o2">
+						<input type="hidden" name="_wpnonce" value="3f51f19b1a">
+					</div>
+					<p><label class="half first"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="Имя" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label>
+					</p>
+					<p><label class="half"><span class="wpcf7-form-control-wrap your-tel"><input type="text" name="your-tel" value="Телефон" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></p>
+					<div class="clear"></div>
+					<p style="margin-bottom: 0;">
+						<label>
+							<span class="wpcf7-form-control-wrap your-message">
+								<textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Комментарий"></textarea>
+							</span>
+						</label>
+						<input type="submit" value="заказать звонок" class="wpcf7-form-control wpcf7-submit sub"  style="margin-bottom: 0;">
+						<img class="ajax-loader" src="https://pitstopcolor.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Отправка..." style="visibility: hidden;">
+					</p>
+						<!-- 
+						<div class="sub_text">
+							<div class="privacy">Нажимая кнопку «Заказать звонок», вы подтверждаете, что ознакомились с <a href="/wp-content/uploads/2017/06/privacy.pdf" target="_blank">Условиями обработки персональных данных</a> и принимаете их.</div>
+						</div> -->
+						<div class="wpcf7-response-output wpcf7-display-none"></div>
+					</form>
+				</div>
+			</div>
+		</li>
+	</div>
+	<script>
+	var typeAnimate = 'fade';</script>
+	<script src="popup/popup-css3.function.js"></script>
 
 	<div id="back-to-top" class="visible"></div>
 

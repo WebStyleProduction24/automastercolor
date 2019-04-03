@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" href="css/tabs-price.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="popup/popup.style.css" rel="stylesheet">
 
 	<script type="text/javascript">
 		window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"js\/wp-emoji-release.min.js?ver=4.2.23"}};
@@ -36,132 +37,11 @@
 
 	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 
-	<!-- <link rel="stylesheet" type="text/css" href="bx/jquery.bxslider.css">
-		<script async="" type="text/javascript" src="bx/jquery.bxslider.min.js"></script> -->
-
-		<script async="" type="text/javascript" src="js/my.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
-		<link rel="stylesheet" type="text/css" href="css/progress-style.css">
-		<script async="" type="text/javascript" src="js/jquery.formstyler.min.js"></script>
-		<script src="js/jquery.maskedinput.min.js"></script>
-
-	<!-- <script async="" type="text/javascript">
-		jQuery(document).ready(function(e) {
-			jQuery(".main_page_slider .bx_slider").bxSlider({
-				mode:'fade',
-				speed:300,
-				infiniteLoop:true,
-				pager:true,
-				controls:true,
-				nextText:'',
-				prevText:'',
-				auto:true,
-				pause:5000		
-			});
-			jQuery(".our_works_slider .bx_slider").bxSlider({
-				mode:'fade',
-				speed:300,
-				infiniteLoop:true,
-				pager:false,
-				controls:true,
-				nextText:'',
-				prevText:'',
-				auto:true,
-				pause:5000		
-			});
-			jQuery('select').styler();
-		});
-	</script> -->
-
-	<!-- <script src="form-validator/jquery.form-validator.min.js"></script> -->
-
-	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script type="text/javascript">
-		ymaps.ready(init);
-		var myMap, 
-		myPlacemark;
-
-		function init(){ 
-			myMap = new ymaps.Map("map", {
-				center: [55.706586, 37.694501],
-				zoom:14.5
-			}); 
-
-			myPlacemark = new ymaps.Placemark([55.706586, 37.694501],{},{
-				iconLayout: 'default#image',
-				iconImageHref: 'img/map_ico.png',
-				iconImageSize: [119, 64],
-				iconImageOffset: [-48, -65]
-			});
-			
-			myMap.behaviors.disable('scrollZoom');
-			myMap.geoObjects.add(myPlacemark);
-		}
-	</script> -->
-
-	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
-
-	<!-- <script src="css/slick.min.js"></script> -->
-
-<!-- 	<script>
-		jQuery(document).ready(function(e) {
-			/*NEW8*/if(jQuery('.slick_slider .swiper-slide').lengtd>6){
-				jQuery('.slick_slider').slick({
-					slidesToShow: 6,
-					slidesToScroll: 1,
-					autoplay:true,
-					autoplaySpeed:3000,
-					speed:100,
-					arrows:true,
-					prevArrow:'<a class="slick-btn slick-prev"></a>',
-					nextArrow:'<a class="slick-btn slick-next"></a>',
-					dots:false,
-					/*fade:true,*/
-					infinite:false,
-					vertical:true,
-					/*verticalSwiping:true*/
-				});
-				jQuery(".aero_work_block").hover(function(e) {
-					jQuery('.slick_slider').slick('slickPause');
-				},function(){
-					jQuery('.slick_slider').slick('slickPlay');
-				});
-				jQuery('.slick_slider').on('afterChange', function(event, slick, currentSlide){
-					jQuery(".aero_work_block .photo_list>.vis").removeClass("vis");
-					jQuery(".aero_work_block .photo_list>li").eq(currentSlide).addClass("vis");
-				});
-			}else{
-				jQuery('.slick_slider .swiper-slide').eq(0).addClass("slick-current");
-			}
-
-			/*NEW8*/jQuery(".slick_slider .swiper-slide a").click(function(){
-				if(jQuery(".work_slider_block .slick-initialized").lengtd>0){
-					var i = jQuery(tdis).parent(".swiper-slide").index();
-					jQuery('.slick_slider').slick('slickGoTo',i, false);
-				}else{
-					jQuery('.slick_slider .slick-current').removeClass("slick-current");
-					jQuery(tdis).parent(".swiper-slide").addClass("slick-current");
-					var i = jQuery(tdis).parent(".swiper-slide").index();
-					jQuery(".aero_work_block .photo_list>.vis").removeClass("vis");
-					jQuery(".aero_work_block .photo_list>li").eq(i).addClass("vis");
-				}
-				return false;
-			});
-
-			jQuery(".s_img_list a").mouseover(function(){
-				var ind = jQuery(tdis).parent("li").index();
-				var l_img = jQuery(tdis).parents(".s_img").parent("li").find(".l_img_list");
-				l_img.find(".act").removeClass("act");
-				l_img.children("li").eq(ind).addClass("act");
-			});
-
-		});
-	</script> -->
-
-	<!--[if lt IE 9]>
-		<script src="js/html5.js" type="text/javascript"></script>
-	<![endif]-->
-
+	<script async="" type="text/javascript" src="js/my.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" type="text/css" href="css/progress-style.css">
+	<script async="" type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 
 	<style type="text/css" data-ymaps="css-modules">
 		.ymaps-2-1-73-pie-chart,.ymaps-2-1-73-pie-chart-caption{position:absolute;display:block;font-family:Arial,sans;font-size:13px}.ymaps-2-1-73-pie-chart{text-align:center;background-size:100% 100%;overflow:visible;z-index:1}.ymaps-2-1-73-pie-chart-caption{-webkit-transform:translate(-50%,0);transform:translate(-50%,0);background-color:rgba(255,255,255,.8);border-radius:3px;padding:0 8px;line-height:24px;max-width:200px;box-sizing:border-box;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;z-index:-1}.ymaps-2-1-73-pie-chart-content,.ymaps-2-1-73-pie-chart-icon{position:absolute;top:0;left:0;height:100%;width:100%}.ymaps-2-1-73-pie-chart-icon{z-index:0}.ymaps-2-1-73-pie-chart-content{z-index:1}
@@ -266,8 +146,8 @@
 						</div>
 					</div>
 					<div class="links">
-						<a href="popup_photov2" class="foto popup_open" rel="nofollow">оценка по фото</a>
-						<a href="popup_zvon" class="ozen popup_open" rel="nofollow">Обратный звонок</a>
+						<a href="#popup_photov" class="foto popup_open" rel="nofollow" data-modal="popup_photov">оценка по фото</a>
+						<a href="#popup_zvon" class="ozen popup_open" rel="nofollow" data-modal="popup_zvon">Обратный звонок</a>
 					</div>
 					<div class="clear">
 					</div>
@@ -688,8 +568,8 @@
 			<div class="footer_contact">
 				<a href="tel:+79507777187"><div class="footer_phone">+7 (950) 7777-187</div></a>
 				<div class="links">
-					<a href="popup_photov2" class="foto popup_open" rel="nofollow">оценка по фото</a>
-					<a href="popup_zvon" class="ozen popup_open" rel="nofollow">Обратный звонок</a>
+					<a href="#popup_photov" class="foto popup_open" rel="nofollow" data-modal="popup_photov">оценка по фото</a>
+					<a href="#popup_zvon" class="ozen popup_open" rel="nofollow" data-modal="popup_zvon">Обратный звонок</a>
 				</div>
 			</div>
 			<div class="clear">
@@ -698,13 +578,80 @@
 				<span style="font-size:12px">
 					Любая информация, в том числе об услугах, сроках, ценах, гарантийных обязательствах, размещенная на сайте, не является публичной офертой. Все права защищены.<br>
 					<a href="https://wsp24.ru/" rel="nofollow" target="_blank" style="color: #5ABBF0">Web Style Production 24</a> - разработка сайта.<br>
-					<a href="/wp-content/uploads/2017/06/privacy.pdf" style="color: #5ABBF0" target="_blank">Политика конфиденциальности</a><br>
+					<!-- <a href="/wp-content/uploads/2017/06/privacy.pdf" style="color: #5ABBF0" target="_blank">Политика конфиденциальности</a><br> -->
 				</span>
 			</div>
 		</div>
 	</div>
 
 
+	<div class="overlay" data-close=""></div>
+	<div id="popup_photov" class="dlg-modal popup_wrapper">
+
+
+
+		<li class="popup_photov2">
+			<a class="popup_close" data-close=""></a>
+			<div class="title">оценка по фотографии</div>
+			<p>(пришлите фото любым удобным для Вас способом)</p>
+			<div class="form ocenv2">
+				<div>
+					<a href="https://api.whatsapp.com/send?phone=79507777187" rel="nofollow" target="_blank">
+						<img src="img/whatsappv2.png">
+					</a>
+					<a href="viber://chat?number=79507777187" rel="nofollow" target="_blank">
+						<img src="img/viberv2.png">
+					</a>					
+					<a href="https://vk.com/malyrvrn" rel="nofollow" target="_blank">
+						<img src="img/vkv2.png">
+					</a>
+				</div>
+			</div>
+			<p class="photov2-p">Также, мы принимаем запросы на e-mail: <a href="mailto:xaychencko@yandex.ru">xaychencko@yandex.ru</a></p>
+			<p>Наш адрес: г. Воронеж, проспект Патриотов д.49Б</p>
+		</li>
+	</div>
+	<div id="popup_zvon" class="dlg-modal popup_wrapper">
+		<li class="popup_zvon">
+			<a class="popup_close"  data-close=""></a>
+			<div class="title">Обратный звонок</div>
+			<div class="form">
+				<div class="wpcf7" id="wpcf7-f7489-o2" lang="ru-RU" dir="ltr">
+					<div class="screen-reader-response"></div>
+					<form name="" action="/#wpcf7-f7489-o2" method="post" class="wpcf7-form has-validation-callback" novalidate="novalidate">
+						<div style="display: none;">
+							<input type="hidden" name="_wpcf7" value="7489">
+							<input type="hidden" name="_wpcf7_version" value="3.9.1">
+							<input type="hidden" name="_wpcf7_locale" value="ru_RU">
+							<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f7489-o2">
+							<input type="hidden" name="_wpnonce" value="3f51f19b1a">
+						</div>
+						<p><label class="half first"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="Имя" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label>
+						</p>
+						<p><label class="half"><span class="wpcf7-form-control-wrap your-tel"><input type="text" name="your-tel" value="Телефон" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></p>
+						<div class="clear"></div>
+						<p style="margin-bottom: 0;">
+							<label>
+								<span class="wpcf7-form-control-wrap your-message">
+									<textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Комментарий"></textarea>
+								</span>
+							</label>
+							<input type="submit" value="заказать звонок" class="wpcf7-form-control wpcf7-submit sub"  style="margin-bottom: 0;">
+							<img class="ajax-loader" src="https://pitstopcolor.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Отправка..." style="visibility: hidden;">
+						</p>
+						<!-- 
+						<div class="sub_text">
+							<div class="privacy">Нажимая кнопку «Заказать звонок», вы подтверждаете, что ознакомились с <a href="/wp-content/uploads/2017/06/privacy.pdf" target="_blank">Условиями обработки персональных данных</a> и принимаете их.</div>
+						</div> -->
+						<div class="wpcf7-response-output wpcf7-display-none"></div>
+					</form>
+				</div>
+			</div>
+		</li>
+	</div>
+	<script>
+	var typeAnimate = 'fade';</script>
+	<script src="popup/popup-css3.function.js"></script>
 
 
 	<div id="back-to-top" class="visible"></div>
